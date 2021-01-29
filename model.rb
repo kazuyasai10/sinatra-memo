@@ -1,4 +1,5 @@
-# frozen_string_literal: true
+class Memo
+  JSON_FILE_PATH = 'data.json'
 
 require 'json'
 require 'securerandom'
