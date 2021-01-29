@@ -1,0 +1,10 @@
+h1.page-header メモ詳細
+h2.page-header
+  | #{@memo.title}
+| 本文:
+p= @memo.content
+a.btn.btn-primary href="/memos/#{@memo.id}/edit"  編集する
+form action="/memos/#{@memo.id}" method="post" 
+  input name="_method" type="hidden" value="delete" /
+  input.btn.btn-danger type="submit" value="削除する" /
+
